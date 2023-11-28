@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+/* navbar start */
+.logo{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.logo span{
+    color: orangered;   
+}
+
+.navbar-nav{
+    margin-left: 20px;
+}
+
+
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin: 4px;
+    transition: 0.5s ease;
+}
+
+
+.nav-item .nav-link:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+.navbar form button{
+    background: orangered;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+/* navabar end */
+
+
+/* home start */
+
+
+.Home{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.253),rgba(0, 0, 0, 0.253)) , url("Images/Home.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Home .content{
+    text-align: center;
+    padding: 200px;
+}
+
+
+.Home .content h4{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+
+.Home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px  1px black;
+    margin-top: 5px;
+}
+
+.Home .content p{
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow:  0px 1px  1px black;
+    margin-top: 5px;
+    color: white;
+}
+
+
+.changecontent::after{
+    content: "";
+    color: orangered;
+    text-shadow: 0px 1px 1px black;
+    /* animation-name: changecontent;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    animation: changecontent 10s linear infinite;
+}
+
+
+@keyframes changecontent {
+    0%{
+        content: "France";
+    }
+    10%{
+        content: "Spain";
+    }
+    20%{
+        content: "United States";
+    }
+    30%{
+        content: "China";
+    }
+    40%{
+        content: "India";
+    }
+    50%{
+        content: "Pakistan";
+    }
+    60%{
+        content: "Italy";
+    }
+    70%{
+        content: "Turkey";
+    }
+    80%{
+        content: "Mexico";
+    }
+    90%{
+        content: "Germany";
+    }
+    100%{
+        content: "United Kingdom";
+    }
+}
+
+
+.Home .content a{
+    color: black;
+    padding:10px ;
+    border-radius: 4px;
+    background: white;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.Home .content a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+/* home end */
+
+
+
+/* Booking section start */
+
+.book{
+    background: rgba(249, 248, 248, 0.765);
+}
+
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+
+.main-text h1 span{
+    color: orangered;
+}
+
+
+.book .card{
+    border-radius: 14px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+/* .book .row{
+    margin-top: 30px; !important
+} */
+
+
+
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+} 
+
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 180px;
+}
+
+.book form .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    background: orangered;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.book form .submit:hover{
+    width: 170px;
+}
+
+/* Booking section end */
+
+
+/* Packages section start */
+
+
+/* .main-text2 h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black ;
+    letter-spacing: 1px;
+} */
+
+
+/* .main-text2 h1 span{
+    color: orangered;
+} */
+
+.packages .card-body .card-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card-body p{
+    font-size: 15px;
+}
+
+/* .packages .card-body .stars{
+    color: orangered;                   !important
+} */
+
+
+.packages .card-body .checked{
+    color: orangered;
+}
+
+.packages .card-body h6{
+    font-size: 20px;
+}
+
+.packages .card-body a{
+    padding: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    border-radius: 6px;    
+}
+
+/* Packages section end */
+
+
+/* Service seection start */
+
+.services{
+    background: rgba(249, 248, 248, 0.765);
+    width: 100%;
+    height: 800px;
+}
+
+.services .card{
+    box-shadow: 0px 5px 5px -6px black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.services .card img{
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.services .card-body h5{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Service seection end*/
+
+
+
+/* Gallery section start */
+
+
+.gallery .card{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.gallery .card img{
+    border-radius: 10px;
+}
+.gallery .card img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
+
+
+
+/* Gallery section end */
+
+
+
+/* About section start */
+
+.about img{
+    border-radius: 14px;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 400px;
+    width: 90%;
+}
+
+
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about p{
+    font-weight: 400;
+}
+
+
+.about .btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.about .btn:hover{
+    width: 170px;
+}
+
+
+
+
+
+
+
+
+/* About section end */
+
+
+/* Footer section start */
+
+#footer{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#about h1{
+    font-weight: 600;
+    padding: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.social-icons i{
+    padding: 10px;
+    border-radius: 5px;
+    font: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.social-icons i:hover{
+    background: orangered;
+}
+
+.credit{
+    font-size: 20px;
+    font-weight: 500;
+}
+.credit span{
+    color: orangered;
+    font-weight: 700;
+}
+
+/* Footer section end */
